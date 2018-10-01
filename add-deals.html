@@ -36,6 +36,9 @@
 	<!-- WYSIWYG Editor css -->
 	<link href="./assets/plugins/wysiwyag/richtext.css" rel="stylesheet" />
 
+	<!-- Date Picker Plugin -->
+	<link href="assets/plugins/date-picker/spectrum.css" rel="stylesheet" />
+
 
 
 	<!-- c3.js Charts Plugin -->
@@ -363,6 +366,12 @@
 														<li style="width: 33.3333%;">
 															<a href="#faq" data-toggle="tab" class="">FAQ</a>
 														</li>
+														<li style="width: 33.3333%;">
+															<a href="#faq" data-toggle="tab" class="">Pricing & Duration</a>
+														</li>
+														<li style="width: 33.3333%;">
+															<a href="#faq" data-toggle="tab" class="">FAQ</a>
+														</li>
 													</ul>
 													<div class="moving-tab" style="width: 388.4px; transform: translate3d(-8px, 0px, 0px); transition: all 0.5s cubic-bezier(0.29, 1.42, 0.79, 1) 0s;">General</div>
 												</div>
@@ -388,7 +397,7 @@
 																		<label class="control-label">Subheader
 																			<small>(required)</small>
 																		</label>
-																		<input name="subheader" type="text" class="form-control valid" aria-required="true" aria-invalid="false">
+																		<input name="subheader" type="text" class="form-control valid" aria-required="true" aria-invalid="false" required>
 																		<span class="material-input"></span>
 																	</div>
 																</div>
@@ -673,12 +682,27 @@
 													</div>
 
 													<!-- ========================FAQ================================= -->
-													<div class="tab-pane active show" id="faq">
+													<div class="tab-pane" id="faq">
 														<div class="row">
 															<div class="col-sm-12">
 																<div class="row">
 																	<div class="col-sm-12">
 																		<h3>Faq Elements &nbsp; <button class="btn btn-primary">Add</button></h3>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="tab-pane  active show" id="pricing">
+														<div class="row">
+															<div class="col-sm-12">
+																<div class="row">
+																	<div class="col-sm-12 col-md-8">
+																			<input class="form-control fc-datepicker hasDatepicker" placeholder="MM/DD/YYYY" type="text" id="dp1538386747065">
+																	</div>
+																	<div class="col-sm-12 col-md-4">
+																		
 																	</div>
 																</div>
 															</div>
@@ -750,6 +774,10 @@
 	<!-- WYSIWYG Editor js -->
 	<script src="./assets/plugins/wysiwyag/jquery.richtext.js"></script>
 
+	<!-- Datepicker js -->
+	<script src="assets/plugins/date-picker/spectrum.js"></script>  
+	<script src="assets/plugins/date-picker/jquery-ui.js"></script>
+	<script src="assets/plugins/input-mask/jquery.maskedinput.js"></script> 
 
 	<!-- Custom scroll bar Js-->
 	<script src="assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
